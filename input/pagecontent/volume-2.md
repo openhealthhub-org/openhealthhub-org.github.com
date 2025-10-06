@@ -5,7 +5,7 @@ See [IHE Patient Administration (PAM)](https://profiles.ihe.net/ITI/TF/Volume1/c
 
 ## Patient Demographic Query (PDQ)
 
-The England and Wales patient identifier is called NHS Number, Scotland uses CHI Number and Northern Ireland Health and Care Number (HCN). The format of all these identiers is described in [NHS Number](https://en.wikipedia.org/wiki/NHS_number
+The England and Wales patient identifier is called NHS Number, Scotland uses CHI Number and Northern Ireland Health and Care Number (HCN). The format of all these identiers is described in [NHS Number](https://en.wikipedia.org/wiki/NHS_number)
 
 API's to use with these identifiers are described are:
 
