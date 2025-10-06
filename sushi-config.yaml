@@ -2,12 +2,12 @@
 # ───────────────────────────────────────────────────
 # the id should be lowercase made up of "ihe." + {domain acronym} + "." + {profile acronym/short-name}
 # e.g. ihe.iti.mhds, or ihe.iti.basicaudit
-id: ihe.domain.profile
-canonical: https://profiles.ihe.net/Domain/Profile
+id: openhealthhub.org
+canonical: https://fhir.openhealthhub.org
 version: 0.0.1-current
-name: IHE_Domain_Profile
-title: "spelled out name of the IHE Profile"
-description: put the short description of the profile here. it should explain what problem is being solved
+name: openhealthhub
+title: "Openhealthhub"
+description: Openhealthhub
 releaseLabel: ci-build
 #releaseLabel: ballot
 #releaseLabel: trial-use
@@ -16,24 +16,23 @@ releaseLabel: ci-build
 status: draft
 publisher:
   ## Find your domain contact on the https://www.ihe.net/ihe_domains page
-  - name: IHE IT Infrastructure Technical Committee
-  - url: https://www.ihe.net/ihe_domains/it_infrastructure/
-  - email: iti@ihe.net
+  - name: Openhealthhub.org
+  - url: https://openhealthhub.org/
+  - email: mayfield.g.kev@gmail.com
 contact:
-  - name: IHE IT Infrastructure Technical Committee
+  - name: Openhealthhub.org
     telecom:
       - system: email
-        value: iti@ihe.net
+        value: mayfield.g.kev@gmail.com
 license:  CC-BY-4.0
 fhirVersion: 4.0.1
 jurisdiction: 'http://unstats.un.org/unsd/methods/m49/m49.htm#001'
 #copyright: IHE http://www.ihe.net/Governance/#Intellectual_Property
-copyrightYear: 2021+
+copyrightYear: 2025+
 dependencies:
-  ihe.iti.balp:
-    id: iheitibasicaudit
-    uri: https://profiles.ihe.net/ITI/BALP/ImplementationGuide/ihe.iti.balp
-    version: 1.1.x
+  fhir.r4.ukcore.stu3.currentbuild:
+    version: 0.0.19-pre-release
+    uri: https://simplifier.net/guide/ukcoreversionhistory
 
 
 parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
@@ -64,46 +63,23 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
 pages:
 # itemize here each narrative page. Include assigned section numbers when appropriate. The order they appear here is the order they will appear in the TOC and on the next/prev navigation.
   index.md:
-    title: ToDo Home
+    title: Home
     generation: markdown
-  volume-1.md:
-    title: 1:XX ToDo Volume 1
+  volume-0.md:
+    title: Clinical Pathways (Volume 0)
     generation: markdown
-  domain-YY.md:
-    title: 2:3.YY Transaction one [Domain-YY]
+  volume-2.md:
+    title: Interfaces (Volume 2)
     generation: markdown
-  domain-ZZ.md:
-    title: 3:?.ZZ Content one [Domain-ZZ]
+  volume-3.md:
+    title: Clinical Documents (Volume 3)
     generation: markdown
-  testplan.md:
-    title: "Test Plan"
+  terminology.md:
+    title: Terminology
     generation: markdown
-  other.md:
-    title: Changes to Other IHE Specifications
-    generation: markdown
-  download.md:
-    title: "Download and Analysis"
-    generation: markdown
-  issues.md:
-    title: Significant Changes and Issues
-    generation: markdown
-
 menu:
   Home: index.html
-  Volume 1:
-    Introduction: volume-1.html
-    Actors and Transactions: volume-1.html#actors-and-transactions
-    Actor Options: volume-1.html#actor-options
-    Required Actor Groupings: volume-1.html#required-groupings
-    Overview: volume-1.html#overview
-    Security Considerations: volume-1.html#security-considerations
-    Cross-Profile Considerations: volume-1.html#other-grouping
-  Volume 2:
-    "Transaction one [Domain-YY]": domain-YY.html
-  Volume 3:
-    "Content one [Domain-ZZ]": domain-ZZ.html
-  Artifacts: artifacts.html
-  Other:
-    Changes to Other IHE Specifications: other.html
-    Download and Analysis: download.html
-    Test Plan: testplan.html
+  Clinical Pathway (Volume 0): volume-0.html
+  Interfaces (Volume 2): volume-2.html
+  Clinical Documents (Volume 3): volume-3.html
+  Terminology: terminology.html
