@@ -51,6 +51,9 @@ NHS England [GP Connect (Patient Facing) Access Record - FHIR API](https://simpl
 
 Guidance for implementing XDS and MHD document metadata **in the UK** is available [IHE Europe Document Metadata](https://www.ihe-europe.net/sites/default/files/2017-11/IHE_ITI_XDS_Metadata_Guidelines_v1.0.pdf)
 
+- NHS North West GMSA [HL7 v2 MDM_T02](https://nw-gmsa.github.io/hl7v2.html#mdm_t02-original-document-notification-and-content) incorporating IHE Europe data standards 
+- NHS North West GMSA [HL7 FHIR Document Reference and IHE Document Entry Mappings](https://nw-gmsa.github.io/StructureDefinition-DocumentReference.html) incorporating IHE Europe data standards
+
 ### Primary Care - Kettering XML
 
 - [EDT Message Specification](kettering/EDT_Message_Specification_v3.0.7.pdf)
@@ -76,3 +79,12 @@ This specification details how results are communication between order comms (mi
 The method of exchanging radiology orders and reports is described in [IHE RAD](https://profiles.ihe.net/ITI/TF/Volume1/ch-17.html) and is often implemented as HL7 ORM, OMG and ORU messages.
 
 - Royal College of Radiologists [Understanding the technical options](https://www.rcr.ac.uk/media/wwtp2mif/rcr-publications_radiology-reporting-networks-understanding-the-technical-options_march-2022.pdf)
+
+## Genomics
+
+The following are from NHS North West GMSA and include mappings between HL7 v2, FHIR and IHE XDS
+
+- [HL7 v2 OML_O21 Laboratory Order](https://nw-gmsa.github.io/hl7v2.html#oml_o21-laboratory-order)
+- [HL7 FHIR ServiceRequest](https://nw-gmsa.github.io/StructureDefinition-ServiceRequest.html)
+- [HL7 v2 ORU_R01](https://nw-gmsa.github.io/hl7v2.html#oru_r01-unsolicited-transmission-of-an-observation-message) incorporates DHCW ORU and Royal College of Pathologists ORU
+- [HL7 FHIR DiagnosticReport](https://nw-gmsa.github.io/StructureDefinition-DiagnosticReport.html)
