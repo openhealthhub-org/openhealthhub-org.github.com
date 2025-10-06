@@ -23,7 +23,6 @@ Most secondary care systems will support [IHE PIX](https://profiles.ihe.net/ITI/
 - NHS England [HL7 v2 ADT Message Specification](HL7/HSCIC-ITK-HL7-V2-Message-Specifications.pdf)
 - NHS England [HL7 v2 ADT Reference Tables](HL7/HSCIC-ITK-HL7-V2-Reference-Tables.pdf)
 
-
 # Patient Care Coordination
 
 Is a complex topic which is described in [IHE Patient Care Coordination (PCC)](https://www.ihe.net/resources/technical_frameworks/#pcc). In the UK the most common implementations are below:
@@ -31,7 +30,14 @@ Is a complex topic which is described in [IHE Patient Care Coordination (PCC)](h
 ## Query for Existing Data (QEDm)
 
 This provides a way for a system to query for existing clinical data, this is often implemented as a RESTful API to a Electronic Health Record (EHR).
-Many secondary care systems (especially from US suppliers, this may also be known as US Core) will support [IHE QEDm](https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html) for querying for existing data. Some UK suppliers will support [CareConnectAPI](https://nhsconnect.github.io/CareConnectAPI/).
+Many secondary care systems (especially from US suppliers, this may also be known as US Core) will support [IHE QEDm](https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html) for querying for existing data. Some UK suppliers will support [CareConnectAPI](https://nhsconnect.github.io/CareConnectAPI/). 
+
+### Supplier/Provider Specifications
+
+- [Yorkshire and Humberside Care Record/Interweave](https://fhir.interweavedigital.com/R4/index.html)
+- [EPIC-on-FHIR](https://fhir.epic.com/)
+- [Meditech](https://fhir.meditech.com/)
+- [Oracle/Cerner](https://docs.oracle.com/en/industries/health/millennium-platform-apis/mfrap/r4_overview.html)
 
 ### Primary Care - IM1
 
@@ -42,6 +48,8 @@ Many secondary care systems (especially from US suppliers, this may also be know
 NHS England [GP Connect (Patient Facing) Access Record - FHIR API](https://simplifier.net/guide/gp-connect-patient-facing-access-record)
 
 ## Cross Enterprise Document Sharing (XDS and MHD)
+
+Guidance for implementing XDS and MHD document metadata **in the UK** is available [IHE Europe Document Metadata](https://www.ihe-europe.net/sites/default/files/2017-11/IHE_ITI_XDS_Metadata_Guidelines_v1.0.pdf)
 
 ### Primary Care - Kettering XML
 
